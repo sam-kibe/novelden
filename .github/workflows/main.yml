@@ -13,6 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Fix Gradle wrapper version
+        run: |
+          find . -name "gradle-wrapper.properties" -exec sed -i 's|distributions/gradle-.*-all.zip|distributions/gradle-8.4-all.zip|g' {} \;
+
       - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
