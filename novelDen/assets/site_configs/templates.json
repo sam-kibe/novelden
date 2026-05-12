@@ -1,0 +1,95 @@
+{
+  "sites": [
+    {
+      "name": "RoyalRoad",
+      "urlPattern": "royalroad\\.com/fiction",
+      "chapterListSelector": ".chapter-row a",
+      "chapterTitleSelector": ".chapter-title h1",
+      "chapterBodySelector": ".chapter-content",
+      "nextPageSelector": null,
+      "stripSelectors": [".author-note-portlet",".ads-container"],
+      "paginationType": "list",
+      "novelTitleSelector": ".fic-title h1",
+      "novelAuthorSelector": ".fic-title h4 a",
+      "novelCoverSelector": ".fic-header img"
+    },
+    {
+      "name": "ScribbleHub",
+      "urlPattern": "scribblehub\\.com/series",
+      "chapterListSelector": ".chapter-item a",
+      "chapterTitleSelector": ".chapter-title",
+      "chapterBodySelector": "#chp_raw",
+      "nextPageSelector": ".next_page a",
+      "stripSelectors": ["#comment",".ads"],
+      "paginationType": "paginated",
+      "novelTitleSelector": ".fic-title h1",
+      "novelAuthorSelector": ".auth-name a",
+      "novelCoverSelector": ".novel-cover img"
+    },
+    {
+      "name": "NovelBin",
+      "urlPattern": "novelbin\\.(com|me|net)/b/",
+      "chapterListSelector": "ul.list-chapter a, li.chapter-item a",
+      "chapterTitleSelector": "h2, .chr-title, .chapter-title",
+      "chapterBodySelector": "#chr-content, .chr-content, #chapter-content",
+      "nextPageSelector": null,
+      "stripSelectors": [".ads",".ad-container","#ads",".locked-chapter","script","style"],
+      "paginationType": "ajax",
+      "novelTitleSelector": ".book-name, h1.title",
+      "novelAuthorSelector": ".author a",
+      "novelCoverSelector": ".book-img img"
+    },
+    {
+      "name": "NovelFire",
+      "urlPattern": "novelfire\\.net",
+      "chapterListSelector": "ul.chapter-list a, .list-chapter a",
+      "chapterTitleSelector": "h2.chapter-title, .chapter-title",
+      "chapterBodySelector": "#chapter-container, .chapter-content, .content-text",
+      "nextPageSelector": "ul.pagination a[href*='page=']",
+      "stripSelectors": [".ads",".ad","#ads",".chapter-nav","footer","script","style"],
+      "paginationType": "paginated",
+      "novelTitleSelector": "h1.novel-title",
+      "novelAuthorSelector": ".novel-author a",
+      "novelCoverSelector": ".novel-cover img"
+    },
+    {
+      "name": "WebNovel",
+      "urlPattern": "webnovel\\.com/book",
+      "chapterListSelector": ".chapter-item a, ._1ywH a",
+      "chapterTitleSelector": ".cha-tit h3, ._epIt h3",
+      "chapterBodySelector": ".cha-words, ._1RYa",
+      "nextPageSelector": null,
+      "stripSelectors": [".j_locked",".lock-info",".vip-info","script","style"],
+      "paginationType": "api",
+      "novelTitleSelector": ".pt4 h2",
+      "novelAuthorSelector": "address a",
+      "novelCoverSelector": ".g_thumb img"
+    },
+    {
+      "name": "Wuxiaworld",
+      "urlPattern": "wuxiaworld\\.com/novel",
+      "chapterListSelector": ".chapter-item a",
+      "chapterTitleSelector": ".chapter-title",
+      "chapterBodySelector": ".chapter-content",
+      "nextPageSelector": ".next-chapter a",
+      "stripSelectors": [".ads",".author-note"],
+      "paginationType": "paginated",
+      "novelTitleSelector": ".novel-title",
+      "novelAuthorSelector": ".author-name",
+      "novelCoverSelector": ".novel-cover img"
+    },
+    {
+      "name": "Generic",
+      "urlPattern": ".*",
+      "chapterListSelector": "a[href*='chapter']",
+      "chapterTitleSelector": "h1",
+      "chapterBodySelector": "article, .entry-content, .post-content, main",
+      "nextPageSelector": "a.next, a[rel='next']",
+      "stripSelectors": [".ads",".advertisement","script","style","nav","header","footer"],
+      "paginationType": "paginated",
+      "novelTitleSelector": "h1",
+      "novelAuthorSelector": ".author",
+      "novelCoverSelector": "img.cover"
+    }
+  ]
+}
