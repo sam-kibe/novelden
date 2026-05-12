@@ -30,7 +30,7 @@ dependencies:
   share_plus: ^7.2.2
 
   # Reading formats
-  epub_view: ^4.5.0
+  epub_view: ^3.2.0
 
   # PDF
   pdfx: ^2.6.0
